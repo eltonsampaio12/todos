@@ -1,38 +1,60 @@
-.App {
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todocontainer {
+  background-color: white;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todofields {
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.todofields > input {
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: gray;
+  opacity: 0.3;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.todofields > button {
+  background-color: #00d4fa;
+  border: none;
+  width: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todoValues {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  background-color: #00fad0;
+  margin-top: 10px;
+  height: 30px;
+  width: 300px;
+  border-radius: 4px;
+}
+
+.todoValues > div {
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.deletebutton {
+  cursor: pointer;
 }
